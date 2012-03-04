@@ -7,7 +7,7 @@ gem 'rails', '3.0.10'
 
 gem 'sqlite3'
 
-gem "rake", "0.8.7"
+gem "rake", "0.9.2.2"
 
 gem 'gmaps4rails'
 # Use unicorn as the web server
