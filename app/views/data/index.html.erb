@@ -1,0 +1,27 @@
+<h1>Listing Data</h1>
+<table>
+	<tr>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th>Carrier</th>
+		<th>Wifi</th>
+		<th>Cell</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<% @data.each do |datum| %>
+	<tr>
+		<td><%= datum.latitude %></td>
+		<td><%= datum.longitude %></td>
+		<td><%= datum.carrier %></td>
+		<td><%= datum.wifi %></td>
+		<td><%= datum.cell %></td>
+		<td><%= link_to 'Show', datum %></td>
+		<td><%= link_to 'Edit', edit_datum_path(datum) %></td>
+		<td><%= link_to 'Destroy', datum, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+	<% end %>
+</table>
+<br />
+<%= link_to 'New Datum', new_datum_path %> 

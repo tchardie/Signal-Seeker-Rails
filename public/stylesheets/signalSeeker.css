@@ -1,0 +1,43 @@
+/* Global styles */
+#banner {
+	background:#333333;
+	padding-left:10px;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	font-family:"Helvetica";
+	font-size:x-large;
+	text-align:left;
+	color:white;
+		
+}
+
+#banner img{
+	float:left;
+	width: 13%;
+	height: 15%;
+}
+#main {
+	margin-left:17em;
+	padding-top:15px;
+	padding-left:2em;
+	padding-bottom:4ex;
+	background:white;
+}
+#Sidebar {
+	margin-top:4ex;
+	float:left;
+	width:16em;
+	background:#333333;
+	text-align:center;
+	line-height:300%;
+}
+#Sidebar a {
+	text-decoration:none;
+	color:white;
+	font-family:"Verdana";
+	font-size:x-large;
+	
+}
+#Sidebar a:hover {
+	color:#CD661D;	
+}

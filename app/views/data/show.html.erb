@@ -1,0 +1,29 @@
+<p id="notice">
+	<%= notice %>
+</p>
+<p>
+	<b>Location:</b>
+	<%= @datum.location %>
+</p>
+<p>
+	<b>Latitude:</b>
+	<%= @datum. latitude %>
+</p>
+<p>
+	<b>Longitude:</b>
+	<%= @datum.longitude %>
+</p>
+<p>
+	<b>Carrier:</b>
+	<%= @datum.carrier %>
+</p>
+<p>
+	<b>Wifi:</b>
+	<%= @datum.wifi %>
+</p>
+<p>
+	<b>Cell:</b>
+	<%= @datum.cell %>
+</p>
+<%= link_to 'Edit', edit_datum_path(@datum) %> |
+<%= link_to 'Back', data_path %> 
