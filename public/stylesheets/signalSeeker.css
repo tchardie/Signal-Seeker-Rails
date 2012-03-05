@@ -21,24 +21,28 @@ body {
 	margin-top: 9em;
 }
 
-#data {
+#data a {
+	padding-right: 2.7em;
+	padding-left: 2.7em;
 	Float: right;
-	margin-top: 3.5em;
+	margin-top: 3.0em;
+}
+
+#users a {
+	padding-right: 2.5em;
+	padding-left: 2.5em;
+	Float: right;
+	margin-top: 0.5em;
+}
+
+#logout {
+	Float: right;
+	margin-top: 1.0em;
 }
 
 #submit {
 	Float: left;
 	margin-top: 1em;
-}
-
-#users {
-	Float: right;
-	margin-top: 1.5em;
-}
-
-#logout {
-	Float: right;
-	margin-top: 1.5em;
 }
 
 .nav a {
@@ -62,8 +66,7 @@ body {
 	color: #575757;
 }
 
-.section
-{
+.section {
 	padding-top: 11em;
 }
 

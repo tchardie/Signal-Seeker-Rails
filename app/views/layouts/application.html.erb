@@ -14,19 +14,19 @@
 			</div>
 			<div id="signin" class="nav">
 				<% if session[:user_id].nil? %>
-					<%= link_to "SIGN IN", login_path %>
+				<%= link_to "SIGN IN", login_path %>
 				<% end %>
 			</div>
 			<% if session[:user_id] %>
-				<div id="data" class="nav">
-					<%= link_to 'DATA', data_path %>
-				</div>
-				<div id="users" class="nav">
-					<%= link_to 'USERS', users_path %>
-				</div>
-				<div id="logout" class="nav">
-					<%= link_to 'LOGOUT', logout_path, :method => :delete %>
-				</div>
+			<div id="data" class="nav">
+				<%= link_to 'DATA', data_path %>
+			</div>
+			<div id="users" class="nav">
+				<%= link_to 'USERS', users_path %>
+			</div>
+			<div id="logout" class="nav">
+				<%= link_to 'LOGOUT', logout_path, :method => :delete %>
+			</div>
 			<% end %>
 			<div id="main">
 				<%= yield %>
