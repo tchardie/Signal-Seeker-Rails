@@ -14,7 +14,8 @@
 	<div class="field">
 		<%= f.label :carrier %>:
 		<br />
-		<%= f.text_field :carrier %>
+		<%= f.select :carrier, Datum::CARRIER_TYPES,
+      :prompt => 'Select a carrier' %>
 	</div>
 	<div class="field">
 		<%= f.label :wifi %>:
