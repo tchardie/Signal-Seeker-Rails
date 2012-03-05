@@ -1,36 +1,36 @@
-<h1>Editing Datum</h1>
-<%= form_for(@datum) do |f| %>
+<div class="section">
+	<h1>Editing Datum</h1>
+	<%= form_for(@datum) do |f| %>
+	<div class="field">
+		<%= f.label :latitude %>:
+		<br />
+		<%= f.text_field :latitude %>
+	</div>
+	<div class="field">
+		<%= f.label :longitude %>:
+		<br />
+		<%= f.text_field :longitude %>
+	</div>
+	<div class="field">
+		<%= f.label :carrier %>:
+		<br />
+		<%= f.text_field :carrier %>
+	</div>
+	<div class="field">
+		<%= f.label :wifi %>:
+		<br />
+		<%= f.text_field :wifi %>
+	</div>
+	<div class="field">
+		<%= f.label :cell %>:
+		<br />
+		<%= f.text_field :cell %>
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+	<% end %>
 
-<div class="field">
-	<%= f.label :latitude %>
-	<br />
-	<%= f.text_field :latitude %>
+	<%= link_to 'Show', @datum %> |
+	<%= link_to 'Back', data_path %>
 </div>
-<div class="field">
-	<%= f.label :longitude %>
-	<br />
-	<%= f.text_field :longitude %>
-</div>
-<div class="field">
-	<%= f.label :carrier %>
-	<br />
-	<%= f.text_field :carrier %>
-</div>
-<div class="field">
-	<%= f.label :wifi %>
-	<br />
-	<%= f.text_field :wifi %>
-</div>
-<div class="field">
-	<%= f.label :cell %>
-	<br />
-	<%= f.text_field :cell %>
-</div>
-<div class="actions">
-	<%= f.submit %>
-</div>
-
-<% end %> 
-
-<%= link_to 'Show', @datum %> |
-<%= link_to 'Back', data_path %>

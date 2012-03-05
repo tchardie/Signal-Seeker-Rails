@@ -1,7 +1,7 @@
 <%= form_for(@datum) do |f| %>
 <% if @datum.errors.any? %>
 <div id="error_explanation">
-	<h2><%= pluralize(@datum.errors.count, "error") %> prohibited this datum from being saved:</h2>
+	<h2><%= pluralize(@datum.errors.count, "error") %> prohibited this data from being saved:</h2>
 	<ul>
 		<% @datum.errors.full_messages.each do |msg| %>
 		<li>
@@ -12,22 +12,22 @@
 </div>
 <% end %>
 <div class="field">
-	<label>Address</label>
+	<%= f.label :address %>:
 	<br />
 	<%= f.text_field :address %>
 </div>
 <div class="field">
-	<%= f.label :carrier %>
+	<%= f.label :carrier %>:
 	<br />
 	<%= f.text_field :carrier %>
 </div>
 <div class="field">
-	<%= f.label :wifi %>
+	<%= f.label :wifi %>:
 	<br />
 	<%= f.text_field :wifi %>
 </div>
 <div class="field">
-	<%= f.label :cell %>
+	<%= f.label :cell %>:
 	<br />
 	<%= f.text_field :cell %>
 </div>

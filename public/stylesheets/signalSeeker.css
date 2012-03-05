@@ -1,42 +1,72 @@
 /* Global styles */
-#banner {
-	background:#333333;
-	padding-left:10px;
-	padding-top:.5em;
-	padding-bottom:.5em;
-	font-family:"Helvetica";
-	font-size:x-large;
-	text-align:left;
-	color:white;
-		
+body {
+	background-image: url('/images/bgPattern.png');
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #575757;
 }
-#banner img{
-	float:left;
-	width: 7%;
-	height: 7%;
+
+#content {
+	margin: 0 auto;
+	width: 926px;
 }
+
+#home {
+	Float: left;
+	margin-top: 0.5em;
+	margin-left: 2em;
+}
+
+#signin {
+	Float: right;
+	margin-top: 9em;
+}
+
+#data {
+	Float: right;
+	margin-top: 3.5em;
+}
+
+#submit {
+	Float: left;
+	margin-top: 1em;
+}
+
+#users {
+	Float: right;
+	margin-top: 1.5em;
+}
+
+#logout {
+	Float: right;
+	margin-top: 1.5em;
+}
+
+.nav a {
+	color: white;
+	text-align: center;
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-top: 0.5em;
+	padding-bottom: .5em;
+	background-color: #575757;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	background-color: #4299CF;
+}
+
+#footer {
+	Float: right;
+	margin-top: 1em;
+	color: #575757;
+}
+
+.section
+{
+	padding-top: 11em;
+}
+
 #main {
-	margin-left:17em;
-	padding-top:15px;
-	padding-left:2em;
-	padding-bottom:4ex;
-	background:white;
 }
-#Sidebar {
-	margin-top:4ex;
-	float:left;
-	width:16em;
-	background:#333333;
-	text-align:center;
-	line-height:300%;
-}
-#Sidebar a {
-	text-decoration:none;
-	color:white;
-	font-family:"Verdana";
-	font-size:x-large;
-	
-}
-#Sidebar a:hover {
-	color:#CD661D;	
-}
+
