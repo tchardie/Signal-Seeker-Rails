@@ -11,13 +11,15 @@ class Datum < ActiveRecord::Base
   def gmaps4rails_marker_picture
     {
       "picture" => "images/#{wifi}.png",
-      "width" =>  "32",          # string, mandatory
-      "height" => "32"     # string, mandatory
+      "width" =>  "40",          # string, mandatory
+      "height" => "37"     # string, mandatory
     }
   end
 
   CARRIER_TYPES = ["Sprint", "At&t", "Verizon", "T-Mobile"]
-
-  validates :wifi, :numericality => {:greater_than_or_equal_to => 0}
-  validates :cell, :numericality => {:greater_than_or_equal_to => 0}
+  SIGNAL_STRENGTH = [0, 1, 2, 3, 4]
+  
+  validates :address, :presence => true
+  validates :wifi, :presence => true
+  validates :cell, :presence => true
 end

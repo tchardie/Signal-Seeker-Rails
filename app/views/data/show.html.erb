@@ -22,6 +22,8 @@
 		<b>Cell:</b>
 		<%= @datum.cell %>
 	</p>
-	<%= link_to 'Edit', edit_datum_path(@datum) %> |
-	<%= link_to 'Back', data_path %>
+	<div class="nav">
+		<%= link_to 'Edit', edit_datum_path(@datum) %>
+		<%= link_to 'Back', data_path %>
+	<div>
 </div>

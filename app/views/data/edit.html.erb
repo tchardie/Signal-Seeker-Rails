@@ -15,23 +15,26 @@
 		<%= f.label :carrier %>:
 		<br />
 		<%= f.select :carrier, Datum::CARRIER_TYPES,
-      :prompt => 'Select a carrier' %>
+      	:prompt => 'Select a carrier' %>
 	</div>
 	<div class="field">
-		<%= f.label :wifi %>:
+		<%= f.label :wifi, 'Wifi signal strength' %>:
 		<br />
-		<%= f.text_field :wifi %>
+		<%= f.select :wifi, Datum::SIGNAL_STRENGTH,
+      		:prompt => 'Select a signal strength'%>
 	</div>
 	<div class="field">
-		<%= f.label :cell %>:
+		<%= f.label :cell, 'Cell signal strength' %>:
 		<br />
-		<%= f.text_field :cell %>
+		<%= f.select :cell, Datum::SIGNAL_STRENGTH,
+      		:prompt => 'Select a signal strength'%>
 	</div>
 	<div class="actions">
 		<%= f.submit %>
 	</div>
 	<% end %>
-
-	<%= link_to 'Show', @datum %> |
-	<%= link_to 'Back', data_path %>
-</div>
+	<br />
+	<div class="nav">
+		<%= link_to 'Show', @datum %>
+		<%= link_to 'Back', data_path %>
+	</div>

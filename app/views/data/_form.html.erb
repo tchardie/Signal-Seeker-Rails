@@ -12,7 +12,7 @@
 </div>
 <% end %>
 <div class="field">
-	<%= f.label :location %>:
+	<%= f.label :address, 'Location(Latitude, Longitude)' %>:
 	<br />
 	<%= f.text_field :address %>
 </div>
@@ -23,14 +23,16 @@
     :prompt => 'Select a carrier' %>
 </div>
 <div class="field">
-	<%= f.label :wifi %>:
+	<%= f.label :wifi, 'Wifi signal strength' %>:
 	<br />
-	<%= f.text_field :wifi %>
+	<%= f.select :wifi, Datum::SIGNAL_STRENGTH,
+	 :prompt => 'Select a signal strength'%>
 </div>
 <div class="field">
-	<%= f.label :cell %>:
+	<%= f.label :cell, 'Cell signal strength' %>:
 	<br />
-	<%= f.text_field :cell %>
+	<%= f.select :cell, Datum::SIGNAL_STRENGTH,
+	 :prompt => 'Select a signal strength'%>
 </div>
 <div class="actions">
 	<%= f.submit %>
