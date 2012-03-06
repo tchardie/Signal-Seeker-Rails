@@ -10,9 +10,11 @@
 			<th></th>
 			<th></th>
 			<th></th>
+			<th></th>
 		</tr>
 		<% @data.each do |datum| %>
 		<tr>
+			<td><%= datum.location %></td>
 			<td><%= datum.latitude %></td>
 			<td><%= datum.longitude %></td>
 			<td><%= datum.carrier %></td>
