@@ -1,7 +1,7 @@
 <div class="section">
   <%= form_tag do %>
     <fieldset>
-      <legend>Please Log In</legend>
+      <legend>Please Sign In</legend>
       
       <% if flash[:alert] %>
       	<p id="notice"><%= flash[:alert] %></p>
@@ -18,7 +18,7 @@
       </div>
       <br />
       <div>
-        <%= submit_tag "Login" %>
+        <%= submit_tag "Sign in" %>
       </div>
     </fieldset>
   <% end %>

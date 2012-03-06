@@ -2,6 +2,10 @@
 	<h1>Editing Datum</h1>
 	<%= form_for(@datum) do |f| %>
 	<div class="field">
+		<%= f.label :location, 'Location name' %>:
+		<br />
+		<%= f.text_field :location %>
+	<div class="field">
 		<%= f.label :latitude %>:
 		<br />
 		<%= f.text_field :latitude %>

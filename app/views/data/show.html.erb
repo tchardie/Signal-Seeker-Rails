@@ -2,9 +2,14 @@
 	<p id="notice">
 		<%= notice %>
 	</p>
+	<h1>Signal Strength and Location Data Details</h1>
+	<p>
+		<b>Location name:</b>
+		<%= @datum.location %>
+	</p>
 	<p>
 		<b>Latitude:</b>
-		<%= @datum. latitude %>
+		<%= @datum.latitude %>
 	</p>
 	<p>
 		<b>Longitude:</b>
@@ -15,15 +20,14 @@
 		<%= @datum.carrier %>
 	</p>
 	<p>
-		<b>Wifi:</b>
+		<b>Wifi signal strength:</b>
 		<%= @datum.wifi %>
 	</p>
 	<p>
-		<b>Cell:</b>
+		<b>Cell signal strength:</b>
 		<%= @datum.cell %>
 	</p>
 	<div class="nav">
 		<%= link_to 'Edit', edit_datum_path(@datum) %>
 		<%= link_to 'Back', data_path %>
-	<div>
-</div>
+	</div>

@@ -13,8 +13,8 @@
 				<%= link_to image_tag('signalSeekerLogo2.png'), home_path() %>
 			</div>
 			<div id="signin" class="nav">
-				<% if session[:user_id].nil? %>
-				<%= link_to "SIGN IN", login_path %>
+				<% if session[:user_id].nil? && request.fullpath != login_path %>
+					<%= link_to "SIGN IN", login_path %>
 				<% end %>
 			</div>
 			<% if session[:user_id] %>
