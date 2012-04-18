@@ -16,7 +16,7 @@ class Datum < ActiveRecord::Base
     }
   end
 
-  CARRIER_TYPES = ["Sprint", "At&t", "Verizon", "T-Mobile"]
+  CARRIER_TYPES = ["Sprint", "Att", "Verizon", "T-Mobile"]
   SIGNAL_STRENGTH = [0, 1, 2, 3, 4]
   
   validates :address, :presence => true
