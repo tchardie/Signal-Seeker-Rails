@@ -50,7 +50,22 @@ class DataController < ApplicationController
   # POST /data.xml
   def create
     @datum = Datum.new(params[:datum])
-
+    
+    if(params[:datum])
+      @datum = Datum.new(params[:datum])
+    else
+      params[:datum] = {:latitude => params[:latitude],
+                        :longitude => params[:longitude],
+                        :gmaps => params[:gmaps],
+                        :location => params[:location],
+                        :address => params[:address],
+                        :carrier => params[:carrier],
+                        :wifi => params[:wifi],
+                        :cell => params[:cell]
+      }
+      @datum = Datum.new(params[:datum])
+    end
+      
     respond_to do |format|
       if @datum.save
         format.html { redirect_to(@datum, :notice => 'Datum was successfully created.') }
@@ -66,7 +81,20 @@ class DataController < ApplicationController
   # PUT /data/1.xml
   def update
     @datum = Datum.find(params[:id])
-
+    
+    if(!params[:datum])
+      params[:datum] = {:latitude => params[:latitude],
+                        :longitude => params[:longitude],
+                        :gmaps => params[:gmaps],
+                        :location => params[:location],
+                        :address => params[:address],
+                        :carrier => params[:carrier],
+                        :wifi => params[:wifi],
+                        :cell => params[:cell]
+      }
+    end
+    
+    
     respond_to do |format|
       if @datum.update_attributes(params[:datum])
         format.html { redirect_to(@datum, :notice => 'Datum was successfully updated.') }
