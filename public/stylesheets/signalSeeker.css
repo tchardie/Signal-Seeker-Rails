@@ -16,6 +16,8 @@ body {
 	margin-left: 2em;
 }
 
+#home a img {border: none;}
+
 #signin {
 	Float: right;
 	margin-top: 9em;
