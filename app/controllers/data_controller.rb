@@ -1,5 +1,5 @@
 class DataController < ApplicationController
-  skip_before_filter :authorize, :only => [:index, :show, :new, :create, :destroy]
+  skip_before_filter :authorize, :only => [:index, :show, :new, :create, :destroy, :edit]
   # GET /data
   # GET /data.xml
   def index
