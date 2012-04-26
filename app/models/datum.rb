@@ -5,7 +5,7 @@ class Datum < ActiveRecord::Base
   end
 
   def gmaps4rails_infowindow
-    "<h4>Location: #{location}<br />Latitude: #{latitude}<br />Longitude: #{longitude}</h4>" << "<h4>#{carrier}<br />Wifi: #{wifi}<br />Cell: #{cell}</h4>"
+    "<h4>Location: #{location}<br />Latitude: #{latitude}<br />Longitude: #{longitude}</h4>" << "<h4>#{carrier}<br />Wifi signal: #{wifi}<br />Cell signal: #{cell}</h4>"
   end
 
   def gmaps4rails_marker_picture

@@ -2,7 +2,7 @@
 body {
 	background-image: url('/images/bgPattern.png');
 	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-	color: #575757;
+	color: #7D7D7D;
 }
 
 #content {
@@ -71,7 +71,3 @@ body {
 .section {
 	padding-top: 11em;
 }
-
-#main {
-}
-
